@@ -2,9 +2,6 @@ This is inspired by [vscode-gengetset](https://github.com/cybertim/vscode-genget
 
 **NOTE** This is a fork from [toanvc/typescript-constructor-generator](https://github.com/toanvc/typescript-constructor-generator). That extension seemed abandoned and behind on packages and bug fixes. This brings it up to date.
 
-# Auto generate Constructor
-(without semicolon). I'll update options to support both semicolon and non-semicolon.
-
 ## Changelog
 
 ### v0.1.0
