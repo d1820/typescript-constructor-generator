@@ -1,58 +1,64 @@
 {
-	"name": "tcv-typescript-constructor-generator",
-	"displayName": "TypeScript constructor generator",
+	"name": "danturco-typescript-generate-ctor",
+	"displayName": "TypeScript Generate Constructor",
 	"description": "Auto generate constructor for TypeScript object in VS code",
-	"version": "0.2.0",
-	"publisher": "toanchivu",
+	"version": "1.0.0",
+	"publisher": "DanTurco",
 	"icon": "icon.png",
-	"galleryBanner": {
-		"color": "#2081bd",
-		"theme": "dark"
-	},
+  "galleryBanner": {
+    "color": "#2596be",
+    "theme": "light"
+  },
 	"capabilities": {
 		"codeActionProvider": "true"
 	},
 	"engines": {
-		"vscode": "^1.4.0"
-	},
+    "vscode": "^1.85.0"
+  },
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/toanvc/typescript-constructor-generator.git"
+		"url": "https://github.com/d1820/typescript-constructor-generator.git"
 	},
-	"homepage": "https://github.com/toanvc/typescript-constructor-generator",
+	"homepage": "https://github.com/d1820/typescript-constructor-generator",
 	"bugs": {
-		"url": "https://github.com/toanvc/typescript-constructor-generator/issues"
+		"url": "https://github.com/d1820/typescript-constructor-generator/issues"
 	},
 	"categories": [
-		"Other"
+		"Other",
+    "Programming Languages"
 	],
 	"activationEvents": [
-		"onCommand:tcv-typescript-constructor-generator.constructor"
+		"onLanguage:typescript"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "tcv-typescript-constructor-generator.constructor",
-				"title": "TypeScript: Generate Constructor"
+				"command": "danturco-typescript-generate-ctor.constructor",
+				"title": "TypeScript: Generate Ctor"
 			}
 		]
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
+    "vscode:prepublish": "npm run compile",
+    "vscode:package": "vsce package",
+    "vscode:publish": "vsce publish",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
 		"pretest": "npm run compile && npm run lint",
 		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
+    "lint-fix": "eslint src --ext ts --fix",
+		"test": "node ./out/test/runTest.js",
+    "update-toc": "powershell -ExecutionPolicy Unrestricted markdown-toc ./README.md -i --bullets=\"-\" ; Write-Host \"Complete\""
 	},
 	"devDependencies": {
-		"eslint": "^7.15.0",
-		"@typescript-eslint/eslint-plugin": "^4.9.0",
-		"@typescript-eslint/parser": "^4.9.0",
-		"typescript": "^4.1.2",
-		"vscode": "^1.1.37",
-		"vsce": "^1.37.6"
+		"eslint": "^8.56.0",
+		"@typescript-eslint/eslint-plugin": "^7.0.2",
+		"@typescript-eslint/parser": "^7.0.2",
+    "@types/vscode": "^1.85.0",
+		"typescript": "^5.3.3",
+		"@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.9"
 	},
 	"dependencies": {}
 }

@@ -89,7 +89,7 @@ export function generateClassesList(): IClass[] {
             }
             const colonIndex = line.text.indexOf(':');
             var typeName = line.text.substring(colonIndex + 1).trim();
-
+            typeName = typeName.replace(/;/g, '');
             bracketClass.vars.push({
               name: name,
               figure: figure,
