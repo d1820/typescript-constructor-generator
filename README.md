@@ -31,7 +31,7 @@ This is inspired by [vscode-gengetset](https://github.com/cybertim/vscode-genget
 
 ## Install
 
-Get VSCode and grab the extension from the [VSCode Extension Market](https://marketplace.visualstudio.com/items?itemName=toanchivu.tcv-typescript-constructor-generator)
+Get VSCode and grab the extension from the [VSCode Extension Market](https://marketplace.visualstudio.com/items?itemName=DanTurco.danturco-typescript-generate-ctor)
 
 ## Usage
 
