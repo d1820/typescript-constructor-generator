@@ -27,7 +27,7 @@ This is inspired by [vscode-gengetset](https://github.com/cybertim/vscode-genget
 - Change command to **TypeScript: Generate Ctor** so not to clash with existing extension installation
 
 
-![constructor](demo.gif)
+![constructor](newdemo.gif)
 
 ## Install
 
