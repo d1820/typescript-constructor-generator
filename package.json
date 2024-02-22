@@ -2,11 +2,11 @@
 	"name": "danturco-typescript-generate-ctor",
 	"displayName": "TypeScript Generate Ctor",
 	"description": "Auto generate constructor for TypeScript object in VS code",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"publisher": "DanTurco",
 	"icon": "icon.png",
   "galleryBanner": {
-    "color": "#2596be",
+    "color": "#042b39",
     "theme": "dark"
   },
 	"capabilities": {
@@ -19,7 +19,7 @@
 		"type": "git",
 		"url": "https://github.com/d1820/typescript-constructor-generator.git"
 	},
-	"homepage": "https://github.com/d1820/typescript-constructor-generator",
+	"homepage": "https://github.com/d1820/typescript-constructor-generator/blob/main/README.md",
 	"bugs": {
 		"url": "https://github.com/d1820/typescript-constructor-generator/issues"
 	},
