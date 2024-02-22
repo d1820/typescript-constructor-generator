@@ -2,7 +2,7 @@
 	"name": "danturco-typescript-generate-ctor",
 	"displayName": "TypeScript Generate Ctor",
 	"description": "Auto generate constructor for TypeScript object in VS code",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"publisher": "DanTurco",
 	"icon": "icon.png",
   "galleryBanner": {
